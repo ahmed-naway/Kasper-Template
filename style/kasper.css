@@ -1,0 +1,1002 @@
+
+/*===============================================================
+
+    ++++++++++++++++>>  globle section  <<+++++++++++++++++
+
+================================================================*/
+
+:root{
+    --main-color:#00C7FC;
+    --section-color: rgba(15,116,143,0.8);
+    --secondary-color:#1f2021;
+    --section-padding:60px 0px 60px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    font-size: 13px;
+    color: #a8a8a8;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*===============================================================
+
+    ++++++++++++++++>>  landing section  <<+++++++++++++++++
+
+================================================================*/
+
+
+.landing {
+    background-image: url(../img/slider/bg2.jpg);
+    background-size: cover;
+    height: 657px;
+}
+
+.landing .container{
+    display: flex;
+    justify-content: space-between;
+    height: 98px;
+    align-items: center;
+    border-bottom: 1px #868686 solid;
+}
+
+.landing .container nav{
+    position: relative;
+}
+
+.landing .container nav ul{
+    display: flex;
+    height: 98px;
+    list-style: none;
+}
+
+.landing .container nav ul li{
+    transition: .3s ease-in-out;
+    height: 98px;
+    line-height: 98px;
+}
+
+.landing .container nav ul li:hover{
+    border-bottom: 1px var(--main-color) solid;
+}
+
+.landing  .container nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 38px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.landing .container nav ul .active{
+    border-bottom: 1px var(--main-color) solid;
+}
+
+.landing .container nav ul .active a{
+    color: var(--main-color);
+}
+
+.landing  .container nav .burger{
+   display: none;
+}
+
+.landing .landing-message{
+    background-color:var(--section-color);
+    padding: 60px 50px 80px 20%;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 60%;                                                                                                 
+}
+
+.landing .landing-message h1{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;  
+}
+
+.landing .landing-message p{
+    color: #FFFFFF;
+    line-height: 28px;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+
+/*===============================================================
+
+    ++++++++++++++++>>  heading section  <<+++++++++++++++++
+
+================================================================*/
+
+
+.heading{
+    display: block ; 
+    text-align: center;
+    padding: var(--section-padding);
+}
+
+ .heading h1{
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 42px;
+    font-weight: 10;
+    color: #1f2021;
+    text-transform: uppercase;
+}
+
+ .heading p{
+    font-size: 13px;
+    line-height: 30px;
+
+}
+
+ .heading hr{
+    width:100px;
+    margin:20px auto;
+    border-top: none;
+    position: relative;
+    color: #1f2021;
+}
+
+ .heading hr::after{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 1px #555555 solid;
+    border-radius: 6px;
+    top: -5px;
+    left: 45px;
+    background-color: #fff;
+}
+
+
+/*===============================================================
+
+    ++++++++++++++++>>  services section  <<+++++++++++++++++
+
+================================================================*/
+
+
+.services .container .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.services .container .cards .card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.services .container .cards .card img {
+    height: 40px;
+    padding-right: 40px;
+}
+.services .container .cards .card h1{
+    color: var(--main-color);
+    font-size: 22px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+
+.services .container .cards .card p{
+    line-height: 22px;
+}
+
+.services .services-backgrounds{
+    background-image: url(../img/slider-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 480px;
+}
+
+.services .services-backgrounds .iphone{
+    position: absolute;
+    bottom: 0px;
+}
+
+.services .services-backgrounds .white{
+    z-index:0;
+    right: calc(57.6% - 100px);
+}
+
+.services .services-backgrounds .black{
+    z-index:1 ;
+    right: calc(57.6%);
+}
+
+.services .services-backgrounds .serv{
+    padding: 60px;
+    background-color: var(--section-color);
+    color: #fff;
+    width: 48%;
+    overflow: hidden;
+    position: absolute;
+    left: 52%;
+    transform: translateX(-48%);
+    top: 50%;
+    transform: translateY(-50%);
+    overflow:auto;
+}
+
+.services .services-backgrounds .serv h1{
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+
+.services .services-backgrounds .serv img{
+    margin-right: 20px;
+}
+
+.services .services-backgrounds .serv p{
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.services .services-backgrounds .serv div{
+    display: flex;
+    margin: 20px 0px;
+}
+
+
+/*===============================================================
+
+    ++++++++++++++++>>  portfolio section  <<+++++++++++++++++
+
+================================================================*/
+
+
+.portfolio{
+    padding-bottom: 60px;
+}
+
+.portfolio .active {
+    background-color: var(--main-color);
+}
+
+.portfolio .active a{
+    text-decoration-color: #fff;
+}
+
+.portfolio .services-nav{
+    width: 100%;
+    padding: 30px;
+}
+
+.portfolio .services-nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.portfolio .container .services-nav ul li {
+    margin: 0px 1px;
+}
+
+.portfolio .container .services-nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+    font-weight: 300;
+    padding: 12px 10px;
+}
+
+.portfolio .container .services-nav ul li .active {
+    color: #fff;
+}
+
+.portfolio .container .services-nav ul li a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.portfolio .container .port-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(200px ,1fr));
+    gap: 2px;
+    padding: 10px 0px;
+}
+
+.portfolio .container .port-cards .card img{
+    width: 100%;
+}
+
+
+/*===============================================================
+
+    ++++++++++++++++>>  about us section  <<+++++++++++++++++
+
+================================================================*/
+
+
+.about .container .image-cont{
+    margin: auto;
+    width: 700px;
+}
+
+.about .container .image-cont img{
+    align-items: center;
+    margin-bottom: -2px;
+    width: 100%;
+}
+
+.about .image-container{
+    background-color: #000;
+    padding: 80px 0px;
+} 
+
+.about .image-container .container .cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(25% ,1fr));
+    justify-content: space-between;
+    background-color: var(--section-color);
+    padding: 30px 0px;
+}
+
+.about .image-container .container .cards .card{
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.about .image-container .container .cards .card h1{
+    font-size: 42px;
+    margin: 14px;
+}
+
+.about .image-container .container .cards .card .contain{
+    margin:auto;
+    background-color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    align-items: center;
+    position: relative;
+    border-radius: 15Px;
+}
+
+.about .image-container .container .cards .card .contain .fa{
+    padding: 15px 0px;
+}
+
+.about .container .work{
+    display:flex;
+}
+
+.about .container .work img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-top: 13px;
+}
+
+.about .container .work .team .details-container> div{
+    display: flex;
+    margin-bottom: 22px;
+}
+
+.about .container .work .team .details-container .details{
+    margin: 10px 30px;
+    color: rgb(20, 20, 20);
+    border-bottom:1px #999 solid;
+}
+
+.about .container .work .team .details-container .details p{
+   line-height: 24px;
+} 
+
+.about .container .work .team .details-container .details p:last-child{
+    float: right;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.about .container .work .skill .skills p{
+    margin-top: 12px;
+}
+
+.about .container .work .skill .skills div{
+    background-color: rgb(228, 228, 228);
+    height: 26px;
+    width: 100%;
+    margin:4px 0px ;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.about .container .work .skill .skills .html::after {
+    position: absolute;
+    content: '';
+    height: 26px;
+    background-color: var(--main-color);
+    width: 95%;
+}
+
+.about .container .work .skill .skills .css::after {
+    position: absolute;
+    content: '';
+    height: 26px;
+    background-color: var(--main-color);
+    width: 93%;
+}
+
+.about .container .work .skill .skills .php::after {
+    position: absolute;
+    content: '';
+    height: 26px;
+    background-color: var(--main-color);
+    width: 85%;
+}
+
+.about .container .work .skill .skills .mysql::after {
+    position: absolute;
+    content: '';
+    height: 26px;
+    background-color: var(--main-color);
+    width: 87%;
+}
+
+.about .details-ag{
+    text-align: center;
+    background-color: #000;
+    padding: 60px 50px;
+    color: #fff;
+}
+
+.about .details-ag h1{
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 36px;
+    width: 90%;
+    margin: auto;
+}
+
+.about .details-ag p{
+    font-size: 14px;
+    line-height: 36px;
+}
+
+
+/*===============================================================
+
+    ++++++++++++++++>>  pricing section  <<+++++++++++++++++
+
+================================================================*/
+
+
+.pricing .price {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.pricing .price .cards {
+    font-size: 18px;
+    color: #1f2021;
+    text-align: center;
+    width: 22%;
+}
+
+.pricing .price .cards .pric{
+    border-top: 1px var(--main-color) solid;
+    border-bottom: 1px var(--main-color) solid;
+    margin: auto;
+    padding: 30px 0px;
+   
+}
+
+
+.pricing .price .cards p strong{
+    font-size: 59.48px;
+    line-height: 69.22px;
+    position: relative;
+   
+}
+
+.pricing .price .cards p strong::before{
+    position: absolute;
+    content: '$';
+    font-size: 18px;
+    top: -15px;
+    left: -13px;
+    font-weight: 100;
+    color: #444;
+}
+
+.pricing .price .cards .feature{
+    margin: auto;
+    border-bottom: 1px var(--main-color) solid;
+}
+
+.pricing .price .cards .feature p {
+    padding: 20px 20px;
+    border-bottom: 1px var(--main-color) solid;
+    width: fit-content;
+    margin: auto;
+    font-size: 16px;
+}
+
+.pricing .price .cards .feature p:last-of-type{
+    border-bottom: none;
+}
+
+.pricing .price .cards button{
+    margin: 30px auto;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    color: #000;
+    font-size: 14px;
+    padding: 15px 30px;
+    border: 1px var(--main-color) solid;
+    text-transform: capitalize;
+}
+
+
+/*===============================================================
+
+    ++++++++++++++++>>  contact us section  <<+++++++++++++++++
+
+================================================================*/
+
+
+.contact-us{
+    text-align: center;
+    padding: var(--section-padding);
+    padding-bottom: 60px;
+}
+
+.contact-us h3{
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #1f2021;
+    font-weight: 100;
+}
+
+.contact-us button{
+    background-color: var(--main-color);
+    padding: 20px 40px;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+
+}
+
+.supscripe{
+    padding: 100px 0px;
+    background-color: #121116;
+    align-items: center;
+}
+
+.supscripe .container{
+    display: flex;
+}
+
+.supscripe .container p{
+    line-height: 1.6;
+    width: 300px;
+}
+
+.supscripe .container .sup-button {
+    width:  75%;
+    margin-right: 30px;
+    display: flex;
+    border: 1px #fff solid;
+    height: 60px;
+    position: relative;
+}
+
+.supscripe .container .sup-button i{
+    line-height: 60px;
+    padding: 0 20px;
+}
+
+.supscripe .container .sup-button input:last-child{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 150px;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.supscripe .container .sup-button input::placeholder{
+    font-size: 16px;
+}
+
+.supscripe .container .sup-button input:nth-of-type(1){
+    width: 100%;
+    background-color: #121116;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.contact{
+    padding: var(--section-padding);
+}
+
+.contact .container{
+    display: flex;
+    padding: var(--section-padding);
+}
+
+.contact .container div {
+    margin-left: 40px;
+}
+
+.contact .container div h5{
+    color: #121116;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.contact .container div h5:last-of-type{
+    margin-top: 100px;
+}
+
+.contact .container div p{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.contact .container form{
+    width: 700px;
+}
+
+.contact .container form ::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact .container form>*{
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border: 1px rgb(221, 221, 221) solid;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    color: #727272;
+    font-size: 15px;
+}
+
+.contact .container form textarea{
+    height: 150px;
+}
+
+.contact .container form input:last-child{
+    background-color: var(--main-color);
+    width: 180px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+/*===============================================================
+
+    ++++++++++++++++>>  footer section  <<+++++++++++++++++
+ 
+================================================================*/
+
+
+.footer{
+    background-color: #121116;
+    padding: 115px 0 35px;
+    text-align: center;
+    margin: auto;
+}
+
+.footer p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer p span{
+    color: var(--main-color);
+}
+
+.footer h2{
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer hr{
+    width: 250px;
+    background-color: #fff;
+    border: none;
+    height: 1px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.footer img{
+    padding-bottom: 45px;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 85px;
+}
+
+.footer ul li{
+    padding: 30px 5px;
+}
+
+.footer ul li i{
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.footer ul li i a{
+    text-decoration: none;
+}
+
+
+/*===============================================================
+
+    +++++++++++++>> mobile responcive section  <<+++++++++++++++++
+
+================================================================*/
+
+
+@media (max-width:991px){
+
+    .services .cards .card img{
+        padding: 0px 30px;
+    }
+
+    .services .cards .card h1{
+        padding-bottom: 18px;
+    }
+
+    .services .services-backgrounds .serv{
+        z-index: 2;
+    }
+
+    .about .container .image-cont{
+        margin: auto;
+        width: 480px;
+    }
+
+    .contact .container form{
+        width: 480px;
+    }
+  
+}
+
+
+
+@media (max-width:768px){
+
+/*=======================>>>   landing   <<<=======================*/
+
+    .landing{
+        z-index: -1;
+    }
+    .landing .landing-message{
+        width: 100%; 
+        text-align: center;  
+        padding:20px 10px;   
+        z-index: 0;                                                                                           
+    }
+    .landing .landing-message h1{
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 30px;
+        margin-bottom: 40px;
+        text-transform: uppercase;  
+    }
+    .landing .container nav ul{
+        top: 45px;
+        height: 60px;
+        line-height: 60px;
+        right: -15px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        width:100vw;
+        display: none;
+    }
+    .landing .container nav ul li{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background-color: var(--main-color);
+        padding-left: 20px;
+        transition: .3s ease-in-out;
+    }
+    .landing .container nav ul li a{
+        width: 100%;
+    }
+    .landing .container nav ul li:hover{
+        padding-left: 60px;
+    }
+   
+    .landing .container nav .burger{
+        display: block;
+        width: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        padding: 3px 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0px;
+        border: 2px var(--section-color) solid;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .landing  .container nav .burger span{
+        background-color: var(--section-color);
+        height: 2px;
+        margin: 3px 0px;
+        width: 100%;
+    }
+    .landing  .container nav:hover ul{
+        display: inline-block;
+    }
+
+
+/*=======================>>>   services   <<<=======================*/
+
+   .services .container .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .services .cards .card{
+        margin-bottom: 40px;
+    }
+    .services .cards .card img{
+        height: 40px;
+        padding-right: 0px;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+    .services .services-backgrounds .serv{
+        width: fit-content;
+        z-index: 2;
+        left: 0;
+    }
+    .services .services-backgrounds .white{
+        left: 130px;
+        z-index:0;
+    }
+    .services .services-backgrounds .black{
+        left: 60px;
+        z-index:1 ;
+    }
+
+/*=======================>>>   portfolio   <<<=======================*/
+
+    .portfolio .services-nav ul li a{
+        font-weight: 300;
+        font-size: 13px;
+        padding: 12px 10px; 
+    }
+
+/*=======================>>>   about   <<<=======================*/
+
+    .about .work{
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+    .about .image-container .container .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about .container .image-cont{
+        margin: auto;
+        width: 320px;
+    }
+    .about .image-container .container{
+        padding: 0px 80px;
+    }
+
+/*=======================>>>   pricing   <<<=======================*/
+
+    .pricing .price {
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing .price .cards {
+        width: 80%;
+        margin: auto;
+    }
+
+/*=======================>>>   contact   <<<=======================*/
+
+    .contact .container form{
+        width: calc(100%);
+    }
+    .contact .container{
+        flex-direction: column;
+        padding-left:15px ;
+        padding-right: 15px;
+    }
+
+/*=======================>>>   supscripe   <<<=======================*/
+
+    .supscripe .container{
+        flex-direction: column;
+    }
+    .supscripe .container p{
+        width: auto;
+    }
+    .supscripe .container .sup-button{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .supscripe .container .sup-button input:last-child{
+        width: fit-content;
+        padding:0px 20px;
+    } 
+}
+
+/*==========>>> all meadia responsive containers <<<===========*/
+
+@media (min-width:767px){
+    .container{
+        width:750px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width:1170px ;
+    }
+}
+
